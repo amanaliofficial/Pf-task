@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var rfd;
+alert(rfd);
+alert(rfd.toFixed(2));
+var fre = prompt("How Much Does Customer Paid For Flight?");
+alert(fre);
+alert(fre.toFixed(2));
+var timeDelayed = prompt("For How Many Minutes Flight Was Delayed? ");
+
+if(Number.isInteger(timeDelayed))
+{
+    if (timeDelayed <= 30 )
+    {
+        
+        print("No rfd Is Offered");
+    } 
+    else if (timeDelayed>30 && timeDelayed <=120) 
+    {
+        
+        rfd=(10/100)*fre;
+        if(rfd<=100)
+        {
+            print(rfd + "$ Discount is Available")
+        }
+        else if(rfd>100)
+        {
+            print("100 Discount is Available")
+        }
+        
+
+    } 
+    else if (timeDelayed >120 && timeDelayed <=300)
+    {
+        rfd=(20/100)*fre;
+        if(rfd<=100)
+        {
+            print(rfd + " Discount is Available")
+        }
+        else if(rfd>100)
+        {
+            print(" Discount is Available")
+        }
+
+
+
+
+    } 
+    else if (timeDelayed >300)
+    {
+        rfd=(50/100)*fre;
+        if(refund<=100)
+        {
+            print(refund + " Discount is Available")
+        }
+        else if(refund>100)
+        {
+            print(" Discount is Available")
+        }
+
+
+    }
+}
+else
+{
+    return -1;
+}   
+    </script>
+</body>
+</html>
